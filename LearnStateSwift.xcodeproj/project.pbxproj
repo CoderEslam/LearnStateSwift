@@ -11,6 +11,10 @@
 		AA442B0C2D872E350094195A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B0B2D872E350094195A /* ContentView.swift */; };
 		AA442B0E2D872E360094195A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA442B0D2D872E360094195A /* Assets.xcassets */; };
 		AA442B112D872E360094195A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA442B102D872E360094195A /* Preview Assets.xcassets */; };
+		AA442B192D872E5D0094195A /* LoginEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B182D872E5D0094195A /* LoginEvent.swift */; };
+		AA442B1B2D872E700094195A /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B1A2D872E700094195A /* LoginState.swift */; };
+		AA442B1D2D872E7F0094195A /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B1C2D872E7F0094195A /* LoginViewModel.swift */; };
+		AA442B1F2D872EC70094195A /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA442B1E2D872EC70094195A /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		AA442B0B2D872E350094195A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AA442B0D2D872E360094195A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA442B102D872E360094195A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AA442B182D872E5D0094195A /* LoginEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginEvent.swift; sourceTree = "<group>"; };
+		AA442B1A2D872E700094195A /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
+		AA442B1C2D872E7F0094195A /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AA442B1E2D872EC70094195A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,7 @@
 		AA442B082D872E350094195A /* LearnStateSwift */ = {
 			isa = PBXGroup;
 			children = (
+				AA442B172D872E530094195A /* auth */,
 				AA442B092D872E350094195A /* LearnStateSwiftApp.swift */,
 				AA442B0B2D872E350094195A /* ContentView.swift */,
 				AA442B0D2D872E360094195A /* Assets.xcassets */,
@@ -65,6 +74,17 @@
 				AA442B102D872E360094195A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA442B172D872E530094195A /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				AA442B182D872E5D0094195A /* LoginEvent.swift */,
+				AA442B1A2D872E700094195A /* LoginState.swift */,
+				AA442B1C2D872E7F0094195A /* LoginViewModel.swift */,
+				AA442B1E2D872EC70094195A /* LoginView.swift */,
+			);
+			path = auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA442B1F2D872EC70094195A /* LoginView.swift in Sources */,
 				AA442B0C2D872E350094195A /* ContentView.swift in Sources */,
+				AA442B1B2D872E700094195A /* LoginState.swift in Sources */,
 				AA442B0A2D872E350094195A /* LearnStateSwiftApp.swift in Sources */,
+				AA442B1D2D872E7F0094195A /* LoginViewModel.swift in Sources */,
+				AA442B192D872E5D0094195A /* LoginEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,7 +296,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnStateSwift/Preview Content\"";
-				DEVELOPMENT_TEAM = SW62CPP9J6;
+				DEVELOPMENT_TEAM = L473P59VRB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -301,7 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LearnStateSwift/Preview Content\"";
-				DEVELOPMENT_TEAM = SW62CPP9J6;
+				DEVELOPMENT_TEAM = L473P59VRB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
